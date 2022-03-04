@@ -1,5 +1,6 @@
 .loader{
-    backdrop-filter: blur(1rem);
+    background-color:  #b8bcc0;
+    opacity: 0.9;
     position: absolute;
     width: 100vw;
     height: 100vh;

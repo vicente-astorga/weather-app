@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/fav.png">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="loader hidden">
+      <img src="icons/loader.svg" alt="loader">
+    </div>
+    <div class="alert">
+      <span>PERMISSION DENIED</span>
+    </div>
+    <main>
+      <div class="grid">
+        <section class="grid__location">
+          <div class="grid__location__button">
+            <img src="icons/map-pin.svg" alt="pin">
+          </div>
+          <div class="grid__location__container">
+            <span class="grid__location__city">City,</span>
+            <span class="grid__location__country">Country</span>
+          </div>
+         
+        </section>
+
+        <section class="grid__degree">
+          <span class="grid__degree__number">00</span>
+          <span class="grid__degree__scale">°C</span>
+        </section>
+
+        <section class="grid__title">
+          <h2>Ttile.</h2>
+        </section>
+
+        <section class="grid__weather">
+          <div class="grid__weather__tab-group">
+            <div class="grid__weather__tab selected">TODAY</div>
+            <div class="grid__weather__tab">TOMORROW</div>
+            <div class="grid__weather__tab">WEEK</div>
+          </div>
+          <div class="grid__weather__card-group">
+
+          <!-- Template
+            <div class="grid__weather__card">
+              <img src="/icons/Group 27.svg" alt="cloud" />
+              <span class="hour">1 PM</span>
+              <span class="degs">20°</span>
+            </div>
+          -->
+
+          </div>
+        </section>
+
+        <section class="grid__info">
+          <span class="grid__info__min">MIN: <span>-</span></span>
+          <span class="grid__info__max">MAX: <span>-</span></span>
+          <span class="grid__info__wind">WIND: <span>-</span></span>
+          <span class="grid__info__humidity">HUMIDITY: <span>-</span></span>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
+
+

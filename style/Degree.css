@@ -1,0 +1,26 @@
+  
+  /* degree */
+  .grid__degree {
+    grid-area: degree;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+  .grid__degree > .grid__degree__number {
+    margin: var(--mg-degree) 0;
+    font-size: var(--step-7);
+    font-weight: 500;
+  }
+  .grid__degree > .grid__degree__scale {
+    font-size: var(--step-4);
+    font-weight: 400;
+  }
+  /* >   >   >   >   >   > */
+
+
+  @media (min-width: 600px) {
+    .grid__degree {
+      padding: 0;
+    }
+  }

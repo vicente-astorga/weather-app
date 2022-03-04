@@ -1,0 +1,104 @@
+@import './Location.css';
+@import './Degree.css';
+@import './Title.css';
+@import './Weather.css';
+@import './Info.css';
+@import './Card.css';
+@import './Alert.css';
+@import './Loader.css';
+
+
+/* @link https://utopia.fyi */
+:root {
+    --step--2: clamp(0.69rem, calc(0.57rem + 0.61vw), 1.12rem);
+    --step--1: clamp(0.83rem, calc(0.67rem + 0.81vw), 1.4rem);
+    --step-0: clamp(1rem, calc(0.79rem + 1.07vw), 1.75rem);
+    --mg-degree: clamp(-1.5rem, calc(-1rem - 0.5vw), -1.75rem);
+    --step-1: clamp(1.2rem, calc(0.92rem + 1.41vw), 2.19rem);
+    --step-2: clamp(1.44rem, calc(1.07rem + 1.85vw), 2.73rem);
+    --step-3: clamp(1.73rem, calc(1.25rem + 2.41vw), 3.42rem);
+    --step-4: clamp(2.07rem, calc(1.45rem + 3.14vw), 4.27rem);
+    --step-5: clamp(2.49rem, calc(1.67rem + 4.08vw), 5.34rem);
+    --step-6: clamp(6.68rem, calc(1.93rem + 5.27vw), 2.99rem);
+    --step-7: clamp(8.34rem, calc(2.22rem + 6.8vw), 3.58rem);
+    --body-pd: clamp(1rem, calc(1rem + 1.5vw), 2.73rem);
+    --title: clamp(3rem, calc(-1rem + 15vw), 10rem);
+    --card-h: clamp(2.3rem, calc(1.8rem + 2.5vw), 4rem);
+
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #d9dcdf;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  
+  .grid {
+    display: grid;
+    padding: calc(var(--body-pd) + 4vh) var(--body-pd);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "location"
+      "degree"
+      "title"
+      "weather"
+      "info";
+  }
+  .grid::before {
+    content: "";
+    position: absolute;
+    background-color: #faff00;
+    filter: blur(2rem);
+    z-index: -1;
+    width: 40vw;
+    height: 80vw;
+    top: 40vw;
+    right: 0;
+    border-top-left-radius: 40vw;
+    border-bottom-left-radius: 40vw;
+  }
+
+
+  @media (min-width: 600px) {
+    .grid {
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas:
+        "location degree"
+        "title title"
+        "weather weather"
+        "info info";
+    }
+    .grid::before {
+      content: "";
+      position: absolute;
+      background-color: #faff00;
+      border-radius: 50%;
+      filter: blur(2rem);
+      z-index: -1;
+      width: 80vw;
+      height: 80vw;
+      bottom: -50vw;
+      right: 10vw;
+      top: unset;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+      .grid {
+          grid-template-areas:
+            "location degree"
+            "title title"
+            "weather info";
+        }
+        
+  }

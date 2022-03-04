@@ -1,0 +1,18 @@
+.loader{
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader > img{
+    width: 100px;
+}
+
+.hidden{
+    top: -100vh;
+}

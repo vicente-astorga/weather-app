@@ -1,0 +1,10 @@
+/* title */
+.grid__title {
+    grid-area: title;
+  }
+  .grid__title > h2 {
+    margin: calc(var(--body-pd) * 1.75) 0;
+    font-size: var(--title);
+    font-weight: 500;
+  }
+  /* >   >   >   >   >   > */

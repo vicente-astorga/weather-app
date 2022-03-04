@@ -1,0 +1,39 @@
+/* weather */
+.grid__weather {
+    position: relative;
+    grid-area: weather;
+  }
+  .grid__weather .selected {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .grid__weather .selected::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: calc(var(--step--1) * 1.5);
+  }
+  
+  .grid__weather__tab-group {
+    padding-bottom: 1rem;
+    font-size: var(--step--1);
+    display: flex;
+    gap: 2rem;
+  }
+  .grid__weather__tab{
+    cursor: pointer;
+  }
+  .grid__weather__card-group {
+    display: flex;
+    gap: var(--step--1);
+    width: calc(100vw - var(--body-pd) * 2);
+    overflow: scroll;
+    padding: 1rem 0;
+  }
+  
+
+  

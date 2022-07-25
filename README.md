@@ -5,4 +5,4 @@ Regarding the design, a *fluid design* was used that seeks to adapt to the major
 
 Take a look: https://vicente-astorga.github.io/weather-app/
 
-# ![sketch of weather app] (https://raw.githubusercontent.com/vicente-astorga/weather-app/main/weather.png)
+# ![sketch of weather app](https://raw.githubusercontent.com/vicente-astorga/weather-app/main/weather.png)
